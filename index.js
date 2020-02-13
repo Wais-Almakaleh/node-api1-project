@@ -66,7 +66,6 @@ server.delete( '/api/hubs/:id', ( req, res ) =>{
 
 server.put('/api/hubs/:id', (req, res) => {
  const id = req.params.id
- const body = req.body
  const {name, bio} = req.body;
 
   if (!name || !bio) {
